@@ -1,0 +1,38 @@
+:root {
+  --bg-color: #f4f4f4;
+  --gap-size: 1rem;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  margin: var(--gap-size);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-size);
+}
+
+.card {
+  background-color: rgb(3, 47, 9);
+  color: #fff;
+  border: 1px solid #cf910b;
+  padding: var(--gap-size);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
